@@ -4,7 +4,7 @@ Predicting competing endogenous RNA (ceRNA) or microRNA (miRNA) sponge modules i
 
 ## Five representative module discovery methods for comparison
 
--Network-based clustering:SC+MCL,SPONGE+MCL
+-Network-based clustering:SC+MCL, SPONGE+MCL
 
 -Matrix factorization:jointNMF, LAceModule
 
