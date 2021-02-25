@@ -10,4 +10,9 @@ Predicting competing endogenous RNA (ceRNA) or microRNA (miRNA) sponge modules i
 
 -Step-wise evaluation: LMSM
 
-## Case study
+## The usage of five representative module discovery methods
+Paste all files including scripts and datasets into a single folder (set the folder as the directory of Matlab and R environment), the scripts of five representative module discovery methods are implemented in five folders (jointNMF, LAceModule, SC+MCL, SPONGE+MCL, LMSM). It is noted that some scripts are running on Matlab, and some scripts are running on R. For example, users can simply run the R scripts to identify miRNA sponge modules by using LMSM method as follows.
+
+```{r echo=FALSE, results='hide', message=FALSE}
+source("LMSM.R")
+```
