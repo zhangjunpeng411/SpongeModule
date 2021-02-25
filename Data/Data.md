@@ -12,6 +12,10 @@ dbEMT_v2.0.csv: generic EMT signatures
 
 HuRI.csv: Putative protein-protein interactions.
 
-dataset_lncR_vs_mR.mat: Matched differentially expressed miRNA, lncRNA and mRNA expression data only used for jointNMF.
+jointNMF_dataset_lncR_vs_mR.mat: Matched differentially expressed miRNA, lncRNA and mRNA expression data only used for jointNMF.
 
-dataset_pseudo_vs_mR.mat: Matched differentially expressed miRNA, pseudogene and mRNA expression data only used for jointNMF.
+jointNMF_dataset_pseudo_vs_mR.mat: Matched differentially expressed miRNA, pseudogene and mRNA expression data only used for jointNMF.
+
+LAceModule_dataset_lncR_vs_mR.mat: Matched differentially expressed miRNA, lncRNA and mRNA expression data only used for LAceModule.
+
+LAceModule_dataset_pseudo_vs_mR.mat: Matched differentially expressed miRNA, pseudogene and mRNA expression data only used for LAceModule.
