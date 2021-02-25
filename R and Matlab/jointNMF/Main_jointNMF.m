@@ -3,7 +3,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Note: Following codes are running on Matlab %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Load data
-%% dataset_lncR_vs_mR.mat and dataset_pseudo_vs_mR.mat can be downloaded from https://drive.google.com/drive/folders/1VDWq7y_9PTV1cTECHTJ_bY-ZoeLDv_Bs?usp=sharing
+%% jointNMF_dataset_lncR_vs_mR.mat and dataset_pseudo_vs_mR.mat can be downloaded from https://drive.google.com/drive/folders/1VDWq7y_9PTV1cTECHTJ_bY-ZoeLDv_Bs?usp=sharing
 load('jointNMF_dataset_lncR_vs_mR.mat');
 load('jointNMF_dataset_pseudo_vs_mR.mat');
 
