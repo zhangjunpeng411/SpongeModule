@@ -4,8 +4,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Note: Following codes are running on Matlab %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Load data
 %% dataset_lncR_vs_mR.mat and dataset_pseudo_vs_mR.mat can be downloaded from https://drive.google.com/drive/folders/1VDWq7y_9PTV1cTECHTJ_bY-ZoeLDv_Bs?usp=sharing
-load('dataset_lncR_vs_mR.mat');
-load('dataset_pseudo_vs_mR.mat');
+load('jointNMF_dataset_lncR_vs_mR.mat');
+load('jointNMF_dataset_pseudo_vs_mR.mat');
 
 %% Generate W,H1,H2,H3
 [W_lncR_vs_mR,H1_lncR_vs_mR,H2_lncR_vs_mR,H3_lncR_vs_mR] = jointNMF(lncRNA_exp_lncR_vs_mR, micro_exp_lncR_vs_mR, mRNA_exp_lncR_vs_mR, miR2lncR_lncR_vs_mR, miR2mR_lncR_vs_mR, mR2mR_lncR_vs_mR, 0.0001, 0.01, 0.01, 0.01, 10, 10, 100);
