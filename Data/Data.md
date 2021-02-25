@@ -16,6 +16,5 @@ jointNMF_dataset_lncR_vs_mR.mat: Matched differentially expressed miRNA, lncRNA 
 
 jointNMF_dataset_pseudo_vs_mR.mat: Matched differentially expressed miRNA, pseudogene and mRNA expression data only used for jointNMF.
 
-LAceModule_dataset_lncR_vs_mR.mat: Matched differentially expressed miRNA, lncRNA and mRNA expression data only used for LAceModule.
+LAceModule_data.RData: Matched differentially expressed miRNA, lncRNA, pseudogene, mRNA expression data, putative miRNA-target interactions and putative protein-protein interactions only used for LAceModule.
 
-LAceModule_dataset_pseudo_vs_mR.mat: Matched differentially expressed miRNA, pseudogene and mRNA expression data only used for LAceModule.
