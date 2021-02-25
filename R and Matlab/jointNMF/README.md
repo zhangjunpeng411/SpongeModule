@@ -3,7 +3,7 @@
 %% jointNMF (running on MATLAB 2010 or newer version)
 
 Function Descriptions
-1. CeModule.m     
+1. jointNMF.m     
 input:     
 X1 (S,N1): S (sample) x N1 (lncRNA or pseudogene) non negative input matrix;     
 X2 (S,N2): S (sample) x N2 (miRNA) non negative input matrix;     
@@ -20,7 +20,7 @@ H1       : N1 x K matrix;
 H2       : N2 x K matrix;     
 H3       : N3 x K matrix;     
 
-2. CeModule_modules.m     
+2. jointNMF_modules.m     
 input:     
 W          : common basis matrix;     
 H1,H2,H3   : coefficient matrices;     
