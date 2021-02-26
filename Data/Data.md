@@ -1,6 +1,6 @@
 The data consists of gene (miRNA, lncRNA, pseudogene and mRNA) expression data, putative miRNA-target (miRNA-lncRNA, miRNA-pseudogene and miRNA-mRNA) interactions, generic EMT signatures, putative protein-protein interactions. All the data can be downloaded at https://drive.google.com/drive/folders/1VDWq7y_9PTV1cTECHTJ_bY-ZoeLDv_Bs?usp=sharing.
 
-PanCancer.RData: Matched miRNA, lncRNA, pseudogene and mRNA expression data, and clinical information in PanCancer.
+Pancancer.RData: Matched miRNA, lncRNA, pseudogene and mRNA expression data, and clinical information in Pancancer.
 
 LncBase_v2.0+NPInter_4.0.csv: Putative miRNA-lncRNA interactions.
 
