@@ -23,10 +23,10 @@ miRSM_ceRNA_module_lncR_vs_mR_WGCNA_CEA <- module_CEA(Pancancer_lncRNA_Exp_DEG_S
                                                    Pancancer_mRNA_Exp_DEG_SummarizedExperiment, 
 						   dbEMT_SummarizedExperiment, 
 						   miRSM_ceRNA_module_lncR_vs_mR_WGCNA[[2]])
-jointNMF_finalmodule_lncR_vs_mR_CEA <- module_CEA(Pancancer_lncRNA_Exp_DEG_SummarizedExperiment, 
+CeModule_finalmodule_lncR_vs_mR_CEA <- module_CEA(Pancancer_lncRNA_Exp_DEG_SummarizedExperiment, 
                                                    Pancancer_mRNA_Exp_DEG_SummarizedExperiment, 
 						   dbEMT_SummarizedExperiment,
-						   jointNMF_finalmodule_lncR_vs_mR)
+						   CeModule_finalmodule_lncR_vs_mR)
 LAceModule_finalmodule_lncR_vs_mR_CEA <- module_CEA(Pancancer_lncRNA_Exp_DEG_SummarizedExperiment, 
                                                    Pancancer_mRNA_Exp_DEG_SummarizedExperiment, 
 						   dbEMT_SummarizedExperiment,
@@ -44,10 +44,10 @@ miRSM_ceRNA_module_pseudo_vs_mR_WGCNA_CEA <- module_CEA(Pancancer_pseudogene_Exp
                                                    Pancancer_mRNA_Exp_DEG_SummarizedExperiment, 
 						   dbEMT_SummarizedExperiment, 
 						   miRSM_ceRNA_module_pseudo_vs_mR_WGCNA[[2]])
-jointNMF_finalmodule_pseudo_vs_mR_CEA <- module_CEA(Pancancer_pseudogene_Exp_DEG_SummarizedExperiment, 
+CeModule_finalmodule_pseudo_vs_mR_CEA <- module_CEA(Pancancer_pseudogene_Exp_DEG_SummarizedExperiment, 
                                                    Pancancer_mRNA_Exp_DEG_SummarizedExperiment, 
 						   dbEMT_SummarizedExperiment,
-						   jointNMF_finalmodule_pseudo_vs_mR)
+						   CeModule_finalmodule_pseudo_vs_mR)
 LAceModule_finalmodule_pseudo_vs_mR_CEA <- module_CEA(Pancancer_pseudogene_Exp_DEG_SummarizedExperiment, 
                                                    Pancancer_mRNA_Exp_DEG_SummarizedExperiment, 
 						   dbEMT_SummarizedExperiment,
@@ -57,13 +57,13 @@ LAceModule_finalmodule_pseudo_vs_mR_CEA <- module_CEA(Pancancer_pseudogene_Exp_D
 SPONGE_ceRNA_module_lncR_vs_mR_MCL_DEA <- module_FA(SPONGE_ceRNA_finalmodule_lncR_vs_mR_MCL, Analysis.type = 'DEA')
 SC_ceRNA_module_lncR_vs_mR_MCL_DEA <- module_FA(SC_ceRNA_finalmodule_lncR_vs_mR_MCL, Analysis.type = 'DEA')
 miRSM_ceRNA_module_lncR_vs_mR_WGCNA_DEA <- module_FA(miRSM_ceRNA_module_lncR_vs_mR_WGCNA[[2]], Analysis.type = 'DEA')
-jointNMF_finalmodule_lncR_vs_mR_DEA <- module_FA(jointNMF_finalmodule_lncR_vs_mR, Analysis.type = 'DEA')
+CeModule_finalmodule_lncR_vs_mR_DEA <- module_FA(CeModule_finalmodule_lncR_vs_mR, Analysis.type = 'DEA')
 LAceModule_finalmodule_lncR_vs_mR_DEA <- module_FA(LAceModule_finalmodule_lncR_vs_mR, Analysis.type = 'DEA')
 
 SPONGE_ceRNA_module_pseudo_vs_mR_MCL_DEA <- module_FA(SPONGE_ceRNA_finalmodule_pseudo_vs_mR_MCL, Analysis.type = 'DEA')
 SC_ceRNA_module_pseudo_vs_mR_MCL_DEA <- module_FA(SC_ceRNA_finalmodule_pseudo_vs_mR_MCL, Analysis.type = 'DEA')
 miRSM_ceRNA_module_pseudo_vs_mR_WGCNA_DEA <- module_FA(miRSM_ceRNA_module_pseudo_vs_mR_WGCNA[[2]], Analysis.type = 'DEA')
-jointNMF_finalmodule_pseudo_vs_mR_DEA <- module_FA(jointNMF_finalmodule_pseudo_vs_mR, Analysis.type = 'DEA')
+CeModule_finalmodule_pseudo_vs_mR_DEA <- module_FA(CeModule_finalmodule_pseudo_vs_mR, Analysis.type = 'DEA')
 LAceModule_finalmodule_pseudo_vs_mR_DEA <- module_FA(LAceModule_finalmodule_pseudo_vs_mR, Analysis.type = 'DEA')
 
 ## Survival analysis
@@ -131,14 +131,14 @@ ExpData1 <- cbind(Pancancer_lncRNA_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]])
 SPONGE_ceRNA_module_lncR_vs_mR_MCL_sur <- moduleSurvival(SPONGE_ceRNA_finalmodule_lncR_vs_mR_MCL, ExpData1, Pancancer_survival)
 SC_ceRNA_module_lncR_vs_mR_MCL_sur <- moduleSurvival(SC_ceRNA_finalmodule_lncR_vs_mR_MCL, ExpData1, Pancancer_survival)
 miRSM_ceRNA_module_lncR_vs_mR_WGCNA_sur <- moduleSurvival(miRSM_ceRNA_module_lncR_vs_mR_WGCNA[[2]], ExpData1, Pancancer_survival)
-jointNMF_finalmodule_lncR_vs_mR_sur <- moduleSurvival(jointNMF_finalmodule_lncR_vs_mR, ExpData1, Pancancer_survival)
+CeModule_finalmodule_lncR_vs_mR_sur <- moduleSurvival(CeModule_finalmodule_lncR_vs_mR, ExpData1, Pancancer_survival)
 LAceModule_finalmodule_lncR_vs_mR_sur <- moduleSurvival(LAceModule_finalmodule_lncR_vs_mR, ExpData1, Pancancer_survival)
 
 ExpData2 <- cbind(Pancancer_pseudogene_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]])
 SPONGE_ceRNA_module_pseudo_vs_mR_MCL_sur <- moduleSurvival(SPONGE_ceRNA_finalmodule_pseudo_vs_mR_MCL, ExpData2, Pancancer_survival)
 SC_ceRNA_module_pseudo_vs_mR_MCL_sur <- moduleSurvival(SC_ceRNA_finalmodule_pseudo_vs_mR_MCL, ExpData2, Pancancer_survival)
 miRSM_ceRNA_module_pseudo_vs_mR_WGCNA_sur <- moduleSurvival(miRSM_ceRNA_module_pseudo_vs_mR_WGCNA[[2]], ExpData2, Pancancer_survival)
-jointNMF_finalmodule_pseudo_vs_mR_sur <- moduleSurvival(jointNMF_finalmodule_pseudo_vs_mR, ExpData2, Pancancer_survival)
+CeModule_finalmodule_pseudo_vs_mR_sur <- moduleSurvival(CeModule_finalmodule_pseudo_vs_mR, ExpData2, Pancancer_survival)
 LAceModule_finalmodule_pseudo_vs_mR_sur <- moduleSurvival(LAceModule_finalmodule_pseudo_vs_mR, ExpData2, Pancancer_survival)
 
 ## Classification analysis
@@ -171,11 +171,11 @@ module.classify <- function(ceRExp, mRExp, EMT_type, Modulelist, method = "br", 
 SPONGE_ceRNA_module_lncR_vs_mR_MCL_classify <- module.classify(Pancancer_lncRNA_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, SPONGE_ceRNA_finalmodule_lncR_vs_mR_MCL)
 SC_ceRNA_module_lncR_vs_mR_MCL_classify <- module.classify(Pancancer_lncRNA_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, SC_ceRNA_finalmodule_lncR_vs_mR_MCL)
 miRSM_ceRNA_module_lncR_vs_mR_WGCNA_classify <- module.classify(Pancancer_lncRNA_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, miRSM_ceRNA_module_lncR_vs_mR_WGCNA[[2]])
-jointNMF_finalmodule_lncR_vs_mR_classify <- module.classify(Pancancer_lncRNA_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, jointNMF_finalmodule_lncR_vs_mR)
+CeModule_finalmodule_lncR_vs_mR_classify <- module.classify(Pancancer_lncRNA_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, CeModule_finalmodule_lncR_vs_mR)
 LAceModule_finalmodule_lncR_vs_mR_classify <- module.classify(Pancancer_lncRNA_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, LAceModule_finalmodule_lncR_vs_mR)  
 
 SPONGE_ceRNA_module_pseudo_vs_mR_MCL_classify <- module.classify(Pancancer_pseudogene_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, SPONGE_ceRNA_finalmodule_pseudo_vs_mR_MCL)
 SC_ceRNA_module_pseudo_vs_mR_MCL_classify <- module.classify(Pancancer_pseudogene_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, SC_ceRNA_finalmodule_pseudo_vs_mR_MCL)
 miRSM_ceRNA_module_pseudo_vs_mR_WGCNA_classify <- module.classify(Pancancer_pseudogene_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, miRSM_ceRNA_module_pseudo_vs_mR_WGCNA[[2]])
-jointNMF_finalmodule_pseudo_vs_mR_classify <- module.classify(Pancancer_pseudogene_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, jointNMF_finalmodule_pseudo_vs_mR)
+CeModule_finalmodule_pseudo_vs_mR_classify <- module.classify(Pancancer_pseudogene_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, CeModule_finalmodule_pseudo_vs_mR)
 LAceModule_finalmodule_pseudo_vs_mR_classify <- module.classify(Pancancer_pseudogene_Exp_DEG[[2]], Pancancer_mRNA_Exp_DEG[[2]], Pseudo_sample, LAceModule_finalmodule_pseudo_vs_mR)  
