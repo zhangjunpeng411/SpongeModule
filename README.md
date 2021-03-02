@@ -6,7 +6,7 @@ Predicting competing endogenous RNA (ceRNA) or microRNA (miRNA) sponge modules i
 
 -Network-based clustering: SC+MCL, SPONGE+MCL
 
--Matrix factorization: jointNMF, LAceModule
+-Matrix factorization: CeModule, LAceModule
 
 -Step-wise evaluation: LMSM
 
@@ -15,7 +15,7 @@ Paste all files including scripts and datasets into a single folder (set the fol
 
 ```{r echo=FALSE, results='hide', message=FALSE}
 # Load functions and packages
-source(â€˜Scripts/Preprocess.R')
+source(¡®Scripts/Preprocess.R')
 library(miRSM)
 library(SummarizedExperiment)
 library(GSEABase)
