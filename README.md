@@ -15,7 +15,7 @@ Paste all files including scripts and datasets into a single folder (set the fol
 
 ```{r echo=FALSE, results='hide', message=FALSE}
 # Load functions and packages
-source(¡®Scripts/Preprocess.R')
+source('Scripts/Preprocess.R')
 library(miRSM)
 library(SummarizedExperiment)
 library(GSEABase)
